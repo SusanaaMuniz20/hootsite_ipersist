@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -20,20 +21,31 @@ body {
     width:  auto;
   }
   img { 
-    width: 100%; 
+    width: 100%; /* max-width: 200%;  Garante que a logomarca não ultrapasse a largura máxima */
     height: auto; 
     display: block;  
   }
-  /*
+  .ImagemLogoIpersist{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 50px;
+  }
+  #ImagemOculos{
+    width: 60%;
+    height: 60%;
+  }
   .image-container {
     position: relative;
     align-items: center;
   }
   .image-container, .imagem {
     width: 1500px; 
-    height: 100px; 
+    height: 500px; 
     padding: 5px;
-  }*/
+  }
   .text-overlay {
     position:absolute;
     top: 300px; /* Ajuste a posição vertical conforme necessário bottom: 100px*/
@@ -49,10 +61,10 @@ body {
   /* AREA HOME*/
   .home{
     padding: 3px 3px 3px 3px;
-  }
+  }  /* AREA HOME */
   .titlePropostaComercial{
     position: relative;
-  }
+  } 
   h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #023D54;
@@ -84,6 +96,33 @@ body {
     margin-top: -30px; 
     padding: 0px 10px;
   }
+  /*AREA DE PRODUTOS E SERVICOS */
+  .divProdutoseServicos{
+    justify-content: center;
+  }
+  .d-flex {
+    display: flex !important;
+  }
+  .child-20 {
+      flex: 20%;
+      margin: -90px;
+      align-items: start;
+  }
+  .child-40 {
+      flex: 40%;
+      padding: 5px;
+      align-items: center;
+  }
+  .child-50 {
+      flex: 50%;
+      padding: 10px;
+  }
+  .child-60 {
+      flex: 60%;
+      padding: 5px;
+      align-items: center;
+      text-align: center;
+  }
 h2{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #023D54;
@@ -95,28 +134,6 @@ h2{
   .image img {
     max-width: 100%;
     height: auto;
-  }
-  .reverse {
-    flex-direction: row-reverse;
-  }
-  .text {
-    padding: 0 20px;
-    text-align: justify;
-  }
-  .text, .text-full {
-    flex: 1;
-  }
-  .image, .image-full {
-    flex: 1;
-    text-align: center;
-  }
-  .text-full, .image-full {
-    width: 100%;
-    text-align: center;
-  }
-  .text-full p, .image-full img {
-    display: block;
-    margin: 0 auto;
   }
   .header {
     display: flex;
@@ -138,45 +155,47 @@ h2{
     text-align: center;
   }
   .cell {
-    color: #ddd;
+    color: #030000;
     border: 1px solid #023D54;
     padding: 8px;
     text-align: center;
-  }
-  .cel1 {
-    color: #ddd;
-    background-color: #023D54;
-  }
-  #cell1 {
-    background-color: #023D54;
-    color: #B2B2B2;
-  }
-  #cell2 {
     background-color: #949390;
-    color: #000000;
+  }
+  #pacotess {
+    background-color: #001720;
+    color: #ffffff;
+  }
+  .cell2 {
+    background-color:#023D54;
+    color: #fbf6f6;
   }
   .styled-table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 8px;
     margin: 30px 0;
+    font-weight: bold;
   }
   .styled-table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
+    font-weight: bold;
   }
   .styled-table th {
     background-color: #CC0000;
     color: #fff;
     padding: 8px;
     text-align: center;
+    font-weight: bold;
   }
   .styled-table tbody tr:nth-child(even) {
     background-color: #f9f9f9;
+    font-weight: bold;
   }
   .styled-table tbody tr:hover {
     background-color: #e5e5e5;
+    font-weight: bold;
   }
   
 /* FOOTER  */
@@ -187,11 +206,6 @@ h2{
   max-width: 600px; /* Ajuste a largura máxima da logomarca conforme necessário */ 
   margin: 0 auto; /* Centraliza a logomarca */ 
 } 
-img { 
-  max-width: 200%; /* Garante que a logomarca não ultrapasse a largura máxima */ 
-  height: auto; /* Mantém a proporção da logomarca */ 
-  display: block; /* Remove espaços em branco abaixo da logomarca */ 
-}
 .button-container {
   display: flex;
   justify-content: center;
@@ -201,7 +215,7 @@ img {
   justify-content: center;
 }
 .h3{
-  color: #ffffff;;
+  text-decoration-color: #f9f9f9;
   text-align: center;
 }
 .circular-button {
