@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 5px;
+  }
+  .divHeader { 
+    width:auto;
+    height:100px;   /* you can set the height of logo */
+    background-color: #ffffff; 
+    color: white; 
+    padding: 10px; /* Ajuste conforme necessário */ 
+    text-align: center; 
+  } 
+  .logo-header { 
+    max-width: 600px; /* Ajuste a largura máxima da logomarca conforme necessário */ 
+    margin: 0 auto; /* Centraliza a logomarca */ 
+  } 
+  .divFotoHeader{
+    height: auto;
+    width:  auto;
+  }
+  img { 
+    width: 100%; 
+    height: auto; 
+    display: block;  
+  }
+  /*
+  .image-container {
+    position: relative;
+    align-items: center;
+  }
+  .image-container, .imagem {
+    width: 1500px; 
+    height: 100px; 
+    padding: 5px;
+  }*/
+  .text-overlay {
+    position:absolute;
+    top: 300px; /* Ajuste a posição vertical conforme necessário bottom: 100px*/
+    left: 10px; /* Ajuste a posição horizontal conforme necessário */
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px 5px 5px 30px;
+    text-align:center;
+  }
+
+  /* AREA HOME*/
+  .home{
+    padding: 3px 3px 3px 3px;
+  }
+  .titlePropostaComercial{
+    position: relative;
+  }
+  h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #023D54;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  .titleProposta{
+    color: #023D54;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 38px;
+    font: bold;
+    margin-bottom: 10px; 
+    padding: 0px 20px;
+  }
+  .titlecomercial{
+    color: #023D54;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    font: bold;
+    margin-top: -30px; 
+    padding: 0px 20px;
+  }
+  .titleIpersist{
+    color: #023D54;
+    font-family: 'Times New Roman', Times, serif;
+    font:bold;
+    font-size: 25px;
+    margin-bottom: 10px; 
+    margin-top: -30px; 
+    padding: 0px 10px;
+  }
+h2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #023D54;
+  text-align: left;
+}
+  .text, .image {
+    flex: 1;
+ }
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .text {
+    padding: 0 20px;
+    text-align: justify;
+  }
+  .text, .text-full {
+    flex: 1;
+  }
+  .image, .image-full {
+    flex: 1;
+    text-align: center;
+  }
+  .text-full, .image-full {
+    width: 100%;
+    text-align: center;
+  }
+  .text-full p, .image-full img {
+    display: block;
+    margin: 0 auto;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+/* TABELA*/
+.planilhaValores{
+  text-align:center;
+} 
+  #table-title {
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    background-color: #023D54;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .cell {
+    color: #ddd;
+    border: 1px solid #023D54;
+    padding: 8px;
+    text-align: center;
+  }
+  .cel1 {
+    color: #ddd;
+    background-color: #023D54;
+  }
+  #cell1 {
+    background-color: #023D54;
+    color: #B2B2B2;
+  }
+  #cell2 {
+    background-color: #949390;
+    color: #000000;
+  }
+  .styled-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px;
+    margin: 30px 0;
+  }
+  .styled-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  .styled-table th {
+    background-color: #CC0000;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+  }
+  .styled-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  .styled-table tbody tr:hover {
+    background-color: #e5e5e5;
+  }
+  
+/* FOOTER  */
+.background-footer {
+  background: linear-gradient(to right, #00697C, #087c85, #15679e); /* Mudança de cor horizontal com três cores */
+}
+.logoFooter { 
+  max-width: 600px; /* Ajuste a largura máxima da logomarca conforme necessário */ 
+  margin: 0 auto; /* Centraliza a logomarca */ 
+} 
+img { 
+  max-width: 200%; /* Garante que a logomarca não ultrapasse a largura máxima */ 
+  height: auto; /* Mantém a proporção da logomarca */ 
+  display: block; /* Remove espaços em branco abaixo da logomarca */ 
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.parceiros {
+  display: flex;
+  justify-content: center;
+}
+.h3{
+  color: #ffffff;;
+  text-align: center;
+}
+.circular-button {
+  display: inline-block;
+  margin: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.circular-button img {
+  display: inline-block;
+  width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+}
+footer {
+  padding: 0PX 2PX 0PX 2PX;
+  color: #023D54;
+  text-align: center;
+}
+ 
+  
