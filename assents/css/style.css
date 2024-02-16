@@ -3,7 +3,181 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  .logo1 { 
+
+    background-color: #ffffff; 
+
+    color: white; 
+
+    padding: 10px; /* Ajuste conforme necessário */ 
+
+    text-align: center; 
+
+  } 
+
+  .logo-container1 { 
+
+    max-width: 600px; /* Ajuste a largura máxima da logomarca conforme necessário */ 
+
+    margin: 0 auto; /* Centraliza a logomarca */ 
+
+  } 
+
+  img { 
+
+    max-width: 200%; /* Garante que a logomarca não ultrapasse a largura máxima */ 
+
+    height: auto; /* Mantém a proporção da logomarca */ 
+
+    display: block; /* Remove espaços em branco abaixo da logomarca */ 
+
+  } 
+
+  .image-container {
+    position: relative;
+    display: inline-block; /* Garante que o contêiner se ajuste ao tamanho da imagem */
+  }
   
+  .text-overlay {
+    position: absolute;
+    top: 10px; /* Ajuste a posição vertical conforme necessário */
+    left: 10px; /* Ajuste a posição horizontal conforme necessário */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+  }
+
+  /*.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: none;
+  }
+  
+  .carousel-slide.active {
+    display: block;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+  }*/
+
+   h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #023D54;
+   }
+
+   h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #023D54;
+    text-align: left;
+   }
+
+   
+
+
+
+
+  img { 
+
+    width: 100%; 
+
+    height: auto; 
+
+  } 
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .content {
+    display: flex;
+    width: 80%;
+    margin: 20px;
+  }
+  
+  .text, .image {
+    flex: 1;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .text {
+    padding: 0 20px;
+    text-align: justify;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+  }
+  
+  .content {
+    display: flex;
+    width: 80%;
+    margin: 20px;
+  }
+  
+  .text, .text-full {
+    flex: 1;
+  }
+  
+  .image, .image-full {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .text-full, .image-full {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .text-full p, .image-full img {
+    display: block;
+    margin: 0 auto;
+  }
+
   header {
     background-color: #0a8df8;
     color: #fff;
@@ -17,6 +191,7 @@ body {
   nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
   }
   
   nav ul li {
@@ -29,6 +204,84 @@ body {
     text-decoration: none;
   }
   
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  
+  #table-title {
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    background-color: #023D54;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+
+  .cell {
+    color: #ddd;
+    border: 1px solid #023D54;
+    padding: 8px;
+    text-align: center;
+  }
+
+
+  .cel1 {
+    color: #ddd;
+    background-color: #023D54;
+  }
+
+  #cell1 {
+    background-color: #023D54;
+    color: #B2B2B2;
+  }
+
+ 
+  #cell2 {
+    background-color: #949390;
+    color: #000000;
+  }
+
+
+  .styled-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px;
+    margin: 30px 0;
+  }
+  
+  
+  .styled-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  
+  .styled-table th {
+    background-color: #CC0000;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .styled-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .styled-table tbody tr:hover {
+    background-color: #e5e5e5;
+  }
+  
+
+
+
   section {
     padding: 50px 20px;
   }
@@ -42,10 +295,88 @@ body {
     padding: 10px;
     margin-bottom: 20px;
   }
+
+
+.background-color2 {
+  background: linear-gradient(to right, #00697C, #087c85, #15679e); /* Mudança de cor horizontal com três cores */
+}
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
   
+  .circular-button {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .circular-button img {
+    display: inline-block;
+    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+  }
+  
+
+  
+
+  .logo-container2 { 
+
+    max-width: 600px; /* Ajuste a largura máxima da logomarca conforme necessário */ 
+
+    margin: 0 auto; /* Centraliza a logomarca */ 
+
+  } 
+
+
+
+  img { 
+
+    max-width: 200%; /* Garante que a logomarca não ultrapasse a largura máxima */ 
+
+    height: auto; /* Mantém a proporção da logomarca */ 
+
+    display: block; /* Remove espaços em branco abaixo da logomarca */ 
+
+  } 
+
+
+   
+ 
+ 
+ 
+  h3{
+    color: #ffffff;
+    text-align: center;
+  }
+ 
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .circular-button {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+  }
+  
+  .circular-button img {
+    display: inline-block;
+    width: 230px; /* Ajuste a largura do botão conforme necessário */
+    height: 160px; /* Ajuste a altura do botão conforme necessário */
+    font-size: 40px; /* Ajuste o tamanho do texto conforme necessário */
+  }
+
+
+
   footer {
-    background-color: #0a8df8;
-    color: #fff;
+    background-color: #ffffff;
+    color: #023D54;
     text-align: center;
     padding: 20px;
   }
