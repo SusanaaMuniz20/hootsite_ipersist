@@ -1,8 +1,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 5px;
+    margin: 0px;
+    padding: 2px 4px;
+    height: 100%;
   }
   .divHeader { 
     width:auto;
@@ -18,7 +19,7 @@ body {
   } 
   .divFotoHeader{
     height: auto;
-    width:  auto;
+    width:  100%;
   }
   img { 
     width: 100%; /* max-width: 200%;  Garante que a logomarca não ultrapasse a largura máxima */
@@ -26,8 +27,9 @@ body {
     display: block;  
   }
   .ImagemLogoIpersist{
+    max-width: 6vw; /*
     width: 80px;
-    height: 80px;
+    height: 80px;*/
     position: absolute;
     top: 0;
     right: 0;
@@ -40,31 +42,28 @@ body {
   .image-container {
     position: relative;
     align-items: center;
-  }
-  .image-container, .imagem {
+    max-width: 100vw;
+    /* height: 300px;  Ajuste a altura conforme necessário */
+    /*height: 100vh;  100% da altura da viewport 
+    background-image: url('imagens/grupoPessoasA.svg');*/
+    background-size: cover; /* Ou 'contain', dependendo do efeito desejado */
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+  } /*
+  .image-container{
     width: 1500px; 
     height: 500px; 
     padding: 5px;
-  }
-  .text-overlay {
-    position:absolute;
-    top: 300px; /* Ajuste a posição vertical conforme necessário bottom: 100px*/
-    left: 10px; /* Ajuste a posição horizontal conforme necessário */
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 5px 5px 5px 30px;
-    text-align:center;
-  }
-
-  /* AREA HOME*/
-  .home{
-    padding: 3px 3px 3px 3px;
-  }  /* AREA HOME */
+  }*/
+  /* AREA HOME */
   .titlePropostaComercial{
     position: relative;
   } 
+  p{
+    justify-content: center;
+    padding: 0px 5px;
+  }
   h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #023D54;
@@ -75,26 +74,25 @@ body {
     color: #023D54;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 38px;
-    font: bold;
+    font: bold;/*
     margin-bottom: 10px; 
-    padding: 0px 20px;
+    padding: 0px 20px;*/
   }
   .titlecomercial{
     color: #023D54;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 70px;
     font: bold;
-    margin-top: -30px; 
-    padding: 0px 20px;
+    margin-top: -30px; /*
+    padding: 0px 20px;*/
   }
   .titleIpersist{
     color: #023D54;
     font-family: 'Times New Roman', Times, serif;
     font:bold;
     font-size: 25px;
-    margin-bottom: 10px; 
-    margin-top: -30px; 
-    padding: 0px 10px;
+    margin-top: -30px;/* 
+    padding: 0px 10px;*/
   }
   /*AREA DE PRODUTOS E SERVICOS */
   .divProdutoseServicos{
@@ -110,8 +108,9 @@ body {
   }
   .child-40 {
       flex: 40%;
-      padding: 5px;
+      padding: 3px;
       align-items: center;
+      justify-content: center;
   }
   .child-50 {
       flex: 50%;
@@ -128,13 +127,9 @@ h2{
   color: #023D54;
   text-align: left;
 }
-  .text, .image {
+  .text {
     flex: 1;
  }
-  .image img {
-    max-width: 100%;
-    height: auto;
-  }
   .header {
     display: flex;
     justify-content: center;
@@ -145,7 +140,7 @@ h2{
 .planilhaValores{
   text-align:center;
 } 
-  #table-title {
+  .table-title {
     display: inline-block;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #ffffff;
@@ -199,16 +194,9 @@ h2{
   }
   
 /* FOOTER  */
-.background-footer {
-  background: linear-gradient(to right, #00697C, #087c85, #15679e); /* Mudança de cor horizontal com três cores */
-}
 .logoFooter { 
   max-width: 600px; /* Ajuste a largura máxima da logomarca conforme necessário */ 
   margin: 0 auto; /* Centraliza a logomarca */ 
-} 
-.button-container {
-  display: flex;
-  justify-content: center;
 }
 .parceiros {
   display: flex;
@@ -218,19 +206,37 @@ h2{
   text-decoration-color: #f9f9f9;
   text-align: center;
 }
-.circular-button {
-  display: inline-block;
-  margin: 10px;
-  border-radius: 50%;
-  overflow: hidden;
+.divButton{
+  padding: 30px;
+  color: rgba(0, 0, 0, 0) ;
 }
-.circular-button img {
+.button{
+  color: rgba(0, 0, 0, 0) ;
+  background: linear-gradient(to right, #00697C, #087c85, #15679e); /* Mudança de cor horizontal com três cores */
+}
+.buttonCadastro{
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0); /* Cor de fundo transparente */
+  width: 80px; /*Diâmetro do botão circular*/
+  height: auto;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
-  width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+  border-radius: 50%; /* Torna o botão circular */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1{
+  border: none;
+}
+.button1:hover {
+  border: none;
+  background-color:  rgb(17, 156, 156);
 }
 footer {
-  padding: 0PX 2PX 0PX 2PX;
-  color: #023D54;
+  background: linear-gradient(to right, #00697C, #087c85, #15679e); /* Mudança de cor horizontal com três cores */
+  padding: 0PX !important; 
+  margin: 0px !important;
   text-align: center;
 }
  
